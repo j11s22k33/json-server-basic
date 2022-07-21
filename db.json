@@ -1,0 +1,24 @@
+{
+  "post": [
+    {
+      "image": "image_1658371101149_2.jpg",
+      "title": "타이틀1",
+      "category": "카테고리1",
+      "content": "콘텐츠1",
+      "_id": 1,
+      "old_image": ""
+    }
+  ],
+  "comment": [
+    {
+      "post_id": "1",
+      "_id": 1,
+      "text": "테스트 코멘"
+    },
+    {
+      "post_id": "2",
+      "_id": 2,
+      "text": "코멘트2"
+    }
+  ]
+}
