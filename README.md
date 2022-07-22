@@ -10,21 +10,26 @@
 ```
 
 ### Relationships
-- https://keyholesoftware.com/2020/03/16/mock-restful-server-fast-with-json-server/
+- https://jsonplaceholder.typicode.com/guide/
 ```
 --id _id
 --fks _id
 
-GET localhost:3000/posts/1
-GET localhost:3000/posts/1/comments
-GET localhost:3000/comment?_expand=post&post_id=1
-PATCH localhost:3000/posts/1/comments - 이거 안됨
+GET	/posts
+GET	/posts/1
+GET	/posts/1/comments - Listing nested resources
+GET	/comments?post_id=1 - Filtering resources
+POST /posts
+PUT	/posts/1
+PATCH /posts/1
+DELETE /posts/1
+
 {
     posts: [
-        {_id:1, name:'post_id_1'}
+        {_id:1}
     ],
     comments: [
-        {posts_id:1, _id:1, name:'posts_1_comment_1'}
+        {posts_id:1, _id:1}
     ]
 }
 ```
