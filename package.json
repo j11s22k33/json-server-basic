@@ -5,7 +5,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development UPLOAD_DIR=public json-server --id _id --fks _id --static public --watch db.json --port 3000 --routes routes.json --middlewares middlewares/formData.js middlewares/auth.js",
+    "start": "cross-env NODE_ENV=development UPLOAD_DIR=public json-server --host 0.0.0.0 --port 3000 --id _id --fks _id --static public --watch db.json --routes routes.json --middlewares middlewares/formData.js middlewares/auth.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
